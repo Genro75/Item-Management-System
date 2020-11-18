@@ -75,6 +75,17 @@ function manageInventory()
 	end 
  
 	print("sum of all the items on the list :",sum)
+	
+	io.write("Do you want to view table y or n : ")
+	temp5 = io.read()
+	if temp5=="y" then
+		for i=1,#table1 do
+			print(table1[i])
+		end
+	elseif temp5=="n" then
+	else
+		print("Invalid Entry")
+	end
 end
  
 io.write("Enter the number of testcases to be  performed : ")
